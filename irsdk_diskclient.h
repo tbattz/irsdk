@@ -95,6 +95,8 @@ public:
 
 protected:
 
+    FILE *m_ibtFile;
+
 	irsdk_header m_header;
 	irsdk_diskSubHeader m_diskSubHeader;
 
@@ -102,7 +104,6 @@ protected:
 	irsdk_varHeader *m_varHeaders;
 	char *m_varBuf;
 
-	FILE *m_ibtFile;
 };
 
 #endif // IRSDKDISKCLIENT_H
